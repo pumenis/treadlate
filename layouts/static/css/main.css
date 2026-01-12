@@ -1,0 +1,100 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+#content {
+  padding-bottom: 100vh;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#definition {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: #333333;
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  /* optional: limit height and add scroll if content overflows */
+  max-height: 40vh;
+  overflow-y: auto;
+}
+span[i] > input {
+  font-size: 0.7rem;
+  width: 10rem;
+}
+
+@media (prefers-color-scheme: light) {
+  span[i] > input {
+    color: black;
+    background-color: #eee;
+  }
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 0.3em;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  flex: 1;
+  padding: 2em;
+  background-color: #f9f9f9;
+}
+
+/* 🌙 Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  a {
+    color: lightgreen;
+  }
+
+  nav {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+  }
+
+  main {
+    background-color: #1a1a1a;
+  }
+
+  footer {
+    background-color: #1f1f1f;
+    color: #aaa;
+  }
+  span[i] > input {
+    color: white;
+    background-color: black;
+  }
+  nav ul li a {
+    color: #e0e0e0;
+  }
+}
