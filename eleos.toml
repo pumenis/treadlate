@@ -1,0 +1,4 @@
+layouts = "/usr/share/treadlate/layouts"
+translate = "/usr/share/treadlate/translate"
+read = "/usr/share/treadlate/read"
+
