@@ -1,7 +1,7 @@
 bookName = os.Args[0]
 chapter = os.Args[1]
 dbpath = "/usr/share/treadlate/database/" + bookName + ".sqlite3"
-dictpath = os.ExpandPath("~/Projects/klironomus/database/") + "/" + bookName + ".SQLite3"
+dictpath = "/usr/share/treadlate/database/" + bookName + ".SQLite3"
 bookTitle = os.Exec("sqlite3", dbpath, `
 select group_concat(item, ' ')
 from words
